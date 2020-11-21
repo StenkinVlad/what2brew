@@ -53,6 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 ROOT_URLCONF = 'what2brew.urls'
 
 TEMPLATES = [
