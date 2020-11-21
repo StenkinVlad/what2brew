@@ -3,7 +3,8 @@ from .models import Post
 from django_summernote.admin import SummernoteModelAdmin
 
 class PostAdmin(SummernoteModelAdmin):
-    summernote_fields = ('content',)
+    # summernote_fields = ('content',)
+    summernote_fields = '__all__'
 
 admin.site.register(Post, PostAdmin)
 

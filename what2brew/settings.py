@@ -26,6 +26,7 @@ SECRET_KEY = 'gezkkaw(@=x-&r^k)fs17j7k==b3!1khgw7mk&awmx1&@pvx1t'
 DEBUG = False
 # DEBUG = True
 
+
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.pythonanywhere.com']
 
 # Application definition
@@ -53,7 +54,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-X_FRAME_OPTIONS = 'SAMEORIGIN'
 ROOT_URLCONF = 'what2brew.urls'
 
 TEMPLATES = [
@@ -73,7 +73,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'what2brew.wsgi.application'
-
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 SITE_ID = 1  #added for flatpages
 
 # Database
