@@ -26,10 +26,7 @@ SECRET_KEY = 'gezkkaw(@=x-&r^k)fs17j7k==b3!1khgw7mk&awmx1&@pvx1t'
 DEBUG = False
 # DEBUG = True
 
-
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.pythonanywhere.com']
-
-
 
 # Application definition
 
@@ -42,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'django_summernote',
+    'django.contrib.sites',
+    'django.contrib.flatpages',
 ]
 
 MIDDLEWARE = [
@@ -74,6 +73,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'what2brew.wsgi.application'
 
+SITE_ID = 1  #added for flatpages
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases

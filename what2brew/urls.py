@@ -20,10 +20,14 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+from django.conf.urls import url, include #addad for flatpages https://simpleisbetterthancomplex.com/tutorial/2016/10/04/how-to-use-django-flatpages-app.html
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
     path('summernote/', include('django_summernote.urls')),
+    url(r'^pages/', include('django.contrib.flatpages.urls')),
+    url(r'^admin/', admin.site.urls),
     ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
