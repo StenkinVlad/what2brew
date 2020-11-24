@@ -125,6 +125,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # added by me
 # STATIC_ROOT = os.path.join(BASE_DIR)
 # STATICFILES_DIRS = (
@@ -147,5 +148,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 # bs3: Bootstrap3 theme
 # bs4: Bootstrap4 theme
 # lite: Lite UI theme (without Bootstrap)
-
-
