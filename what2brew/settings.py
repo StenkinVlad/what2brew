@@ -26,8 +26,9 @@ SECRET_KEY = 'gezkkaw(@=x-&r^k)fs17j7k==b3!1khgw7mk&awmx1&@pvx1t'
 # DEBUG = False
 DEBUG = True
 
+ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'what2brew.pythonanywhere.com']
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'what2brew.pythonanywhere.com']
 
 # Application definition
 
