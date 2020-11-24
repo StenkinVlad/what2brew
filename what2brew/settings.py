@@ -142,3 +142,7 @@ SUMMERNOTE_CONFIG = {
     # Use this when you're already using Bootstrap/jQuery based themes.
     'iframe': False,
 }
+SUMMERNOTE_THEME = 'bs4'
+# bs3: Bootstrap3 theme
+# bs4: Bootstrap4 theme
+# lite: Lite UI theme (without Bootstrap)
