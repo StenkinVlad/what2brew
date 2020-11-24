@@ -21,13 +21,13 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 # from django.conf.urls import url  #addad for flatpages https://simpleisbetterthancomplex.com/tutorial/2016/10/04/how-to-use-django-flatpages-app.html
-# from django.conf.urls import include as include_2 #addad for flatpages
+from django.conf.urls import include as include_2 #addad for flatpages
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
     path('summernote/', include('django_summernote.urls')),
-    path('pages/', include('django.contrib.flatpages.urls')),
+    path('pages/', include_2('django.contrib.flatpages.urls')),
     # path('pages/', include_2('django.contrib.flatpages.urls')),
     # url(r'^pages/', include_2('django.contrib.flatpages.urls')),
     # url(r'^admin/', admin.site.urls),

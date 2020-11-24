@@ -131,6 +131,7 @@ STATIC_URL = '/static/'
 # )
 
 MEDIA_URL = '/media/'
+<<<<<<< HEAD
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # SUMMERNOTE_CONFIG = {
@@ -146,3 +147,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 # bs3: Bootstrap3 theme
 # bs4: Bootstrap4 theme
 # lite: Lite UI theme (without Bootstrap)
+=======
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+>>>>>>> parent of e04fd1b... 111
