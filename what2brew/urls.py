@@ -27,7 +27,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
     path('summernote/', include('django_summernote.urls')),
-    path('pages/', include_2('django.contrib.flatpages.urls')),
+    path('pages/', include('django.contrib.flatpages.urls')),
     # path('pages/', include_2('django.contrib.flatpages.urls')),
     # url(r'^pages/', include_2('django.contrib.flatpages.urls')),
     # url(r'^admin/', admin.site.urls),
