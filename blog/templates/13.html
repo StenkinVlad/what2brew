@@ -1,7 +1,22 @@
-<body>
-    <h2>Hello  ther it is just a webpage to develop</h2>
-    <h1>o yeah Baby!</h1>
-</body>
+{% extends 'base.html' %} {% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 card mb-4  mt-3 left  top">
+      <div class="card-body">
+        <h1>Hello  there it is just a webpage to develop</h1>
+        <h2>o yeah Baby!</h2>
+      </div>
+    </div>
+    {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+  </div>
+</div>
+
+{% endblock content %}
+
+
+
+
 
 
 
