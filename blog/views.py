@@ -21,3 +21,9 @@ class PostDetail(generic.DetailView):
 # from django.http import HttpResponse
 def page13(request):
     return render (request, '13.html')
+
+def about_me(request):
+    return render (request, 'about_me.html')
+
+def terms(request):
+    return render (request, 'terms_of_use.html')
