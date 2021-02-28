@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'django.contrib.sites',
     'django.contrib.flatpages',
+    'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [

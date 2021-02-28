@@ -21,6 +21,10 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+    def get_absolute_url(self):
+        from django.urls import reverse
+        return reverse("post_detail", kwargs={"slug": str(self.slug)})
+
 # Now that our new database model is created we need to create a new migration record for it and
 # migrate the change into our database.
 #

@@ -1,12 +1,20 @@
 from . import views
 from django.urls import path
 
+from django.contrib.sitemaps.views import sitemap
+from blog.sitemaps import PostSitemap
+
+sitemaps = {
+    "posts": PostSitemap,
+}
+
 urlpatterns = [
     path('', views.PostList.as_view(), name='home'),
     path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
     path('13', views.page13),
     path('about', views.about_me),
     path('terms', views.terms),
+    path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="sitemap"),
 ]
 
 

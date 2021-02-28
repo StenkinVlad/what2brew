@@ -20,30 +20,24 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-# from django.conf.urls import url  #addad for flatpages https://simpleisbetterthancomplex.com/tutorial/2016/10/04/how-to-use-django-flatpages-app.html
-from django.conf.urls import include as include_2 #addad for flatpages
+# from django.contrib.sitemaps.views import sitemap
+# from blog.sitemaps import PostSitemap
+#
+# sitemaps = {
+#     "posts": PostSitemap,
+# }
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
     path('summernote/', include('django_summernote.urls')),
     path('pages/', include('django.contrib.flatpages.urls')),
-
-    # path('pages/', include_2('django.contrib.flatpages.urls')),
-    # url(r'^pages/', include_2('django.contrib.flatpages.urls')),
-    # url(r'^admin/', admin.site.urls),
+    # path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="sitemap"),
     ]
+
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
                           document_root=settings.MEDIA_ROOT)
 
 
-# from django.contrib import admin
-# from django.urls import path, include #new include  09/09/20
-# from django.conf.urls import url #new 09/09/20
-#
-# urlpatterns = [
-#     path('admin/', admin.site.urls),
-#     # url(r'^blog/', include('urls.py')),  # new 09/09/20
-#     path('', include('blog.urls')), #new 09/09/20
-# ]
+
