@@ -79,7 +79,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'what2brew.wsgi.application'
 X_FRAME_OPTIONS = 'SAMEORIGIN'
-SITE_ID = 1  #added for flatpages
+# SITE_ID = 1  #added for flatpages
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
