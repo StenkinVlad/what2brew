@@ -3,7 +3,6 @@ from django.shortcuts import render
 from django.views import generic
 from .models import Post
 
-
 # status = 1 - only view the posted posts, ton draft
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by('-created_on')

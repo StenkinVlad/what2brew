@@ -1,12 +1,12 @@
 from . import views
 from django.urls import path
 
-from django.contrib.sitemaps.views import sitemap
-from blog.sitemaps import PostSitemap
-
-sitemaps = {
-    "posts": PostSitemap,
-}
+# from django.contrib.sitemaps.views import sitemap
+# from what2brew.sitemaps import PostSitemap
+#
+# sitemaps = {
+#     "posts": PostSitemap,
+# }
 
 urlpatterns = [
     path('', views.PostList.as_view(), name='home'),
@@ -14,7 +14,9 @@ urlpatterns = [
     path('13', views.page13),
     path('about', views.about_me),
     path('terms', views.terms),
-    path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="sitemap"),
+    # path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="sitemap"),
+    # path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
+    # path("sitemap.xml", sitemap, {"sitemaps": sitemaps}),
 ]
 
 

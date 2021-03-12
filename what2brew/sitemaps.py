@@ -1,8 +1,8 @@
 from django.contrib.sitemaps import Sitemap
-from .models import Post
+from blog.models import Post
 
 class PostSitemap(Sitemap):
-    changefreq = "always"
+    changefreq = "weekly"
     priority = 0.8
 
     def items(self):
