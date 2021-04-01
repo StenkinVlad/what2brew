@@ -27,7 +27,7 @@ DEBUG = False
 # DEBUG = True
 
 # ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.pythonanywhere.com', 'www.what2brew.com', 'what2brew.com']
 
 
 # Application definition
