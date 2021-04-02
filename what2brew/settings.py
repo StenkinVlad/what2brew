@@ -21,9 +21,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR,'templates')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 #last was
-# SECRET_KEY = 'gezkkaw(@=x-&r^k)fs17j7k==b3!1khgw7mk&awmx1&@pvx1t'
+SECRET_KEY = 'gezkkaw(@=x-&r^k)fs17j7k==b3!1khgw7mk&awmx1&@pvx1t'
 #and now it
-SECRET_KEY = os.environ['gezkkaw(@=x-&r^k)fs17j7k==b3!1khgw7mk&awmx1&@pvx1t']
+# SECRET_KEY = os.environ['gezkkaw(@=x-&r^k)fs17j7k==b3!1khgw7mk&awmx1&@pvx1t']
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
